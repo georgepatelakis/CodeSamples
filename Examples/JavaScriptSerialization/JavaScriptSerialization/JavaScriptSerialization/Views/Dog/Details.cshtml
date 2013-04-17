@@ -1,0 +1,29 @@
+﻿@model JavaScriptSerializer_MVC4.Models.Dog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Dog</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.age)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.age)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id=Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
